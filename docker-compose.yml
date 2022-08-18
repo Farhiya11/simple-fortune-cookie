@@ -8,5 +8,12 @@ services:
     ports: 
       - 8000:8080
 
+    # envoirment info om backend, så den kan forbinde
+    environment:
+      BACKEND_DNS: backend
+      BACKEND_PORT: 9000
+
   backend:
     build: backend
+    expose: 
+      - 9000
