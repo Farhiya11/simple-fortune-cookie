@@ -14,7 +14,7 @@ jobs:
           go-version: 1.15
 
       - name: Build
-        run: go build ./
+        run: go build frontend
 
       - name: Test
-        run: go test ./
+        run: go test frontend
