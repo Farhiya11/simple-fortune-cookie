@@ -11,6 +11,6 @@ COPY . .
 RUN go build
 
 # Bruger Entrypoint i stedet for CMD fordi at ENtrypoint bliver ikke ændret
-#hihi
+#hihihi
 ENTRYPOINT ["go", "run", "backend"]
 
