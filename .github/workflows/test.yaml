@@ -6,5 +6,9 @@ jobs:
   go-test:
     runs-on: golang
     steps:
+
+      - name: cd frontend
+        run: cd frontend
+
       - name: run test
         run: go test
