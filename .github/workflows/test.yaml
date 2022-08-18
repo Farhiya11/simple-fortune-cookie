@@ -1,0 +1,10 @@
+name: test
+on: push
+
+jobs:
+
+  go-test:
+    runs-on: golang
+    steps:
+      - name: run test
+        run: go test
