@@ -15,3 +15,10 @@ jobs:
 
       - name: Test
         run: cd frontend && go test
+
+      - name: To Dockerhub
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: owagn20/devops:latest, owagn20/devops:${{ github.run_number }}
